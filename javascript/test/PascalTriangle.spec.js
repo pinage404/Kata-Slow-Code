@@ -23,7 +23,7 @@ describe('PascalTriangle', () => {
     it.each([
         [0, [1]],
         [1, [1, 1]],
-    ])("rename me", () => {
+    ])("rename me", (line, exepected) => {
         expect(PascalTriangle.line(0)).toEqual([1]);
     })
     it("expect line to have 1 1", () => {
