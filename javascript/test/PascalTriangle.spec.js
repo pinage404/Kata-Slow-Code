@@ -27,10 +27,4 @@ describe('PascalTriangle', () => {
     ])("rename me", (line, exepected) => {
         expect(PascalTriangle.line(line)).toEqual(exepected);
     })
-    it("expect line to have 1 1", () => {
-        expect(PascalTriangle.line(1)).toEqual([1, 1]);
-    })
-    it("expect line to have 1 2 1", () => {
-        expect(PascalTriangle.line(2)).toEqual([1, 2, 1]);
-    })
 });
