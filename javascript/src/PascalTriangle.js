@@ -26,11 +26,11 @@ SOFTWARE.
 // Write a function, that given a line number, returns the triangle as an array of integers
 // Details here: https://en.wikipedia.org/wiki/Pascal%27s_triangle
 class PascalTriangle {
-    static line(i) {
-      if(i===1)
+  static line(i) {
+    if (i === 1)
       return [1, 1];
-      return [1];
-    }
+    return [1];
   }
+}
 
 module.exports = PascalTriangle;
