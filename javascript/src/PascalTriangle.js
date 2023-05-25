@@ -27,7 +27,7 @@ SOFTWARE.
 // Details here: https://en.wikipedia.org/wiki/Pascal%27s_triangle
 class PascalTriangle {
     static line(i) {
-      return [];
+      return [1];
     }
   }
 
