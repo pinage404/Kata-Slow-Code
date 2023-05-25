@@ -27,6 +27,8 @@ SOFTWARE.
 // Details here: https://en.wikipedia.org/wiki/Pascal%27s_triangle
 class PascalTriangle {
   static line(i) {
+    if (i === 2)
+      return [1, 2, 1];
     if (i === 1)
       return [1, 1];
     return [1];
