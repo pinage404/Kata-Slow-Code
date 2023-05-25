@@ -32,11 +32,11 @@ class PascalTriangle {
     const previous = PascalTriangle.line(i-1);
 
     if (i === 3)
-      return [previous[0], 3, 3, 1];
+      return [previous.at(0), 3, 3, 1];
     if (i === 2)
-      return [previous[0], 2, 1];
+      return [previous.at(0), 2, 1];
     if (i === 1)
-      return [previous[0], 1];
+      return [previous.at(0), 1];
     return [1];
   }
 }
