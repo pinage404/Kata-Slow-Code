@@ -29,13 +29,14 @@ class PascalTriangle {
   static line(i) {
     if (i===0)
       return [1];
-    PascalTriangle.line(i-1);
+    const previous = PascalTriangle.line(i-1);
+
     if (i === 3)
-      return [1, 3, 3, 1];
+      return [previous[0], 3, 3, 1];
     if (i === 2)
-      return [1, 2, 1];
+      return [previous[0], 2, 1];
     if (i === 1)
-      return [1, 1];
+      return [previous[0], 1];
     return [1];
   }
 }
