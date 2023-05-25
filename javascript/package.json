@@ -10,7 +10,7 @@
     "jest-junit": "*"
   },
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "jest-junit": {
     "outputDirectory": "./test_results"
