@@ -23,6 +23,7 @@ describe('PascalTriangle', () => {
     it.each([
         [0, [1]],
         [1, [1, 1]],
+        [2, [1, 2, 1]],
     ])("rename me", (line, exepected) => {
         expect(PascalTriangle.line(line)).toEqual(exepected);
     })
