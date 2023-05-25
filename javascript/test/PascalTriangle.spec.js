@@ -20,7 +20,9 @@ describe('PascalTriangle', () => {
 
         expect(PascalTriangle.line(15)).toEqual([1, 15, 105, 455, 1365, 3003, 5005, 6435, 6435, 5005, 3003, 1365, 455, 105, 15, 1]);
     });
-    it("rename me", () => {
+    it.each([
+        [0, [1]]
+    ])("rename me", () => {
         expect(PascalTriangle.line(0)).toEqual([1]);
     })
     it("expect line to have 1 1", () => {
