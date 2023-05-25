@@ -24,6 +24,7 @@ describe('PascalTriangle', () => {
         [0, [1]],
         [1, [1, 1]],
         [2, [1, 2, 1]],
+        [3, [1, 3, 3, 1]],
     ])("%d -> %s", (line, exepected) => {
         expect(PascalTriangle.line(line)).toEqual(exepected);
     })
